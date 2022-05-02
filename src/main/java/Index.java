@@ -42,6 +42,25 @@ public class Index {
                 case 3:
                 case 4:
                 case 5:
+                    double precoEnergia = 0.28738;
+                    double precoUsoSistemaDistribuicao =  0.30711;
+                    System.out.println("Digite a quantidade de kWh consumidos: ");
+                    double kwhConsumidos = sc.nextDouble();
+                    double calculoDeTarifaLuz = kwhConsumidos *  precoEnergia + kwhConsumidos * precoUsoSistemaDistribuicao;
+
+                    System.out.printf("Valor calculado com sucesso! Sua tarifa da conta de luz deu: R$%.2f", calculoDeTarifaLuz);
+                    System.out.println("\n");
+                    System.out.println("\nMENU");
+                    System.out.println("1 - Créditos " +
+                            "\n2 - Decisão: Podemos ir à praia?" +
+                            "\n3 - Cálculo de descontos " +
+                            "\n4 - Cálculo de IMC" +
+                            "\n5 - Cálculo de tarifa da conta de luz para grupo normal" +
+                            "\n6 - Cálculo de tarifa de água e esgoto" +
+                            "\n7 - Encerrar sessão.");
+                    System.out.println("Digite um número da opção desejada: ");
+                    novaDecisao = sc.nextInt();
+                    decisao = novaDecisao;
                 case 6:
                 case 7:
                     System.out.println("------------CRÉDITOS------------" +
@@ -51,6 +70,7 @@ public class Index {
                             "\nCleiton Ribeiro da Silva;" +
                             "\nDaniel Augusto Magalhães França;" +
                             "\nJenifer Mirela Sousa Alves.");
+                    System.out.println("\n\nSistema encerrado com sucesso!");
                     break;
             }
         }while(decisao != 7);
