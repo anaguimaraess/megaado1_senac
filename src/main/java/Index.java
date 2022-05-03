@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Index {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int decisao = 0;
+        int decisao ;
         System.out.println("Bem-vindx ao facilitor de seus calculos e decisões!\n ");
 
 
@@ -41,6 +41,16 @@ public class Index {
                     System.out.printf("Valor calculado com sucesso! Sua tarifa da conta de luz deu: R$%.2f", calculoDeTarifaLuz);
                     break;
                 case 6:
+                    Scanner input = new Scanner(System.in);
+                    double tarifa = 0, consumaagua= 0 ,total=0, tarifa1 = 29.00,tarifa2=4.54,tarifa3=11.33,tarifa4=12.48;
+                    System.out.println("Calculadora da tarifas para os serviços de abastecimento de \n" +
+                            "água e/ou coleta de esgoto, para o município de SAO PAULO. \n\n " +
+                            "Entre com seu consumo em m3(metros cubicos) do mes:\n" );
+
+                    consumaagua = input.nextInt();
+                    if(consumaagua<=10){
+                        total= consumaagua*tarifa1;
+                    }
                 case 7:
                     System.out.println("------------CRÉDITOS------------" +
                             "\nSistem criado por:" +
