@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Index {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int decisao ;
+        int decisao;
         System.out.println("Bem-vindx ao facilitor de seus calculos e decisões!\n ");
 
 
@@ -30,35 +30,39 @@ public class Index {
                             "\nJenifer Mirela Sousa Alves.");
                     break;
                 case 2:
+                    break;
                 case 3:
+                    break;
                 case 4:
+                    break;
                 case 5:
                     double precoEnergia = 0.28738;
-                    double precoUsoSistemaDistribuicao =  0.30711;
+                    double precoUsoSistemaDistribuicao = 0.30711;
                     System.out.println("Digite a quantidade de kWh consumidos: ");
                     double kwhConsumidos = sc.nextDouble();
-                    double calculoDeTarifaLuz = kwhConsumidos *  precoEnergia + kwhConsumidos * precoUsoSistemaDistribuicao;
+                    double calculoDeTarifaLuz = kwhConsumidos * precoEnergia + kwhConsumidos * precoUsoSistemaDistribuicao;
                     System.out.printf("Valor calculado com sucesso! Sua tarifa da conta de luz deu: R$%.2f", calculoDeTarifaLuz);
                     break;
                 case 6:
-                    double consumoAgua, total=0,
-                            tarifa1 = 29.00,tarifa2=4.54,tarifa3=11.33,tarifa4=12.48;
+                    double consumoAgua, total = 0,
+                            tarifa1 = 29.00, tarifa2 = 4.54, tarifa3 = 11.33, tarifa4 = 12.48;
                     System.out.println("Calculadora da conta de serviços de abastecimento de \n" +
                             "água e/ou coleta de esgoto, residencial, para o município de SAO PAULO. \n" +
                             "Levando em consideração que os valores das tarifas já foram estabelecidos e, " +
-                            "será contado o uso do esgoto !\n\n"+
+                            "será contado o uso do esgoto !\n\n" +
                             "Entre com seu consumo em m3(metros cubicos) do mes:");
-                    consumoAgua= sc.nextDouble();
-                    if(consumoAgua<=10){
-                        total = (consumoAgua*tarifa1)*2;
-                    }else if(consumoAgua>10 && consumoAgua<=20){
-                        total = ((tarifa1 + (consumoAgua-10) * tarifa2))*2;
-                    }else if(consumoAgua>20&& consumoAgua<=50) {
-                        total = ((tarifa1 + 10 * tarifa2 + (consumoAgua - 20) * tarifa3))*2;
-                    }if(consumoAgua>50){
-                    total =  ((tarifa1 + 10 * tarifa2 + 30 * tarifa3 + (consumoAgua - 50) * tarifa4))*2;
+                    consumoAgua = sc.nextDouble();
+                    if (consumoAgua <= 10) {
+                        total = (consumoAgua * tarifa1) * 2;
+                    } else if (consumoAgua > 10 && consumoAgua <= 20) {
+                        total = ((tarifa1 + (consumoAgua - 10) * tarifa2)) * 2;
+                    } else if (consumoAgua > 20 && consumoAgua <= 50) {
+                        total = ((tarifa1 + 10 * tarifa2 + (consumoAgua - 20) * tarifa3)) * 2;
                     }
-                    System.out.printf("____Sua conta de Água/Esgoto será no valor de %.2f:R$____\n",total);
+                    if (consumoAgua > 50) {
+                        total = ((tarifa1 + 10 * tarifa2 + 30 * tarifa3 + (consumoAgua - 50) * tarifa4)) * 2;
+                    }
+                    System.out.printf("____Sua conta de Água/Esgoto será no valor de %.2f:R$____\n", total);
                     break;
                 case 7:
                     System.out.println("------------CRÉDITOS------------" +
@@ -71,6 +75,6 @@ public class Index {
                     System.out.println("\n\nSistema encerrado com sucesso!");
                     break;
             }
-        }while(decisao != 7);
+        } while (decisao != 7);
     }
 }
