@@ -16,7 +16,7 @@ public class Index {
                     "\n5 - Cálculo de tarifa da conta de luz para grupo normal" +
                     "\n6 - Cálculo de tarifa de água e esgoto" +
                     "\n7 - Encerrar sessão.");
-            System.out.println("Digite um número da opção desejada: ");
+            System.out.println("\nDigite um número da opção desejada: ");
             decisao = sc.nextInt();
 
             switch (decisao) {
@@ -41,16 +41,25 @@ public class Index {
                     System.out.printf("Valor calculado com sucesso! Sua tarifa da conta de luz deu: R$%.2f", calculoDeTarifaLuz);
                     break;
                 case 6:
-                    Scanner input = new Scanner(System.in);
-                    double tarifa = 0, consumaagua= 0 ,total=0, tarifa1 = 29.00,tarifa2=4.54,tarifa3=11.33,tarifa4=12.48;
-                    System.out.println("Calculadora da tarifas para os serviços de abastecimento de \n" +
-                            "água e/ou coleta de esgoto, para o município de SAO PAULO. \n\n " +
-                            "Entre com seu consumo em m3(metros cubicos) do mes:\n" );
-
-                    consumaagua = input.nextInt();
-                    if(consumaagua<=10){
-                        total= consumaagua*tarifa1;
+                    double consumoagua, total=0,
+                            tarifa1 = 29.00,tarifa2=4.54,tarifa3=11.33,tarifa4=12.48;
+                    System.out.println("Calculadora da conta de serviços de abastecimento de \n" +
+                            "água e/ou coleta de esgoto, residencial, para o município de SAO PAULO. \n" +
+                            "Levando em consideração que os valores das tarifas já foram estabelecidos e, " +
+                            "será contado o uso do esgoto !\n\n"+
+                            "Entre com seu consumo em m3(metros cubicos) do mes:");
+                    consumoagua= sc.nextDouble();
+                    if(consumoagua<=10){
+                        total = (consumoagua*tarifa1)*2;
+                    }else if(consumoagua>10 && consumoagua<=20){
+                        total = ((tarifa1 + (consumoagua-10) * tarifa2))*2;
+                    }else if(consumoagua>20&& consumoagua<=50) {
+                        total = ((tarifa1 + 10 * tarifa2 + (consumoagua - 20) * tarifa3))*2;
+                    }if(consumoagua>50){
+                    total =  ((tarifa1 + 10 * tarifa2 + 30 * tarifa3 + (consumoagua - 50) * tarifa4))*2;
                     }
+                    System.out.printf("____Sua conta de Água/Esgoto será no valor de %.2f:R$____\n",total);
+                    break;
                 case 7:
                     System.out.println("------------CRÉDITOS------------" +
                             "\nSistem criado por:" +
