@@ -22,7 +22,7 @@ public class Index {
             switch (decisao) {
                 case 1:
                     System.out.println("------------CRÉDITOS------------" +
-                            "\nSistem criado por:" +
+                            "\nSistema criado por:" +
                             "\nAna Carolina Guimarães Sousa;" +
                             "\nBarbara Vitoria da Silva Santos;" +
                             "\nCleiton Ribeiro da Silva;" +
@@ -99,7 +99,7 @@ public class Index {
                     break;
                 case 7:
                     System.out.println("------------CRÉDITOS------------" +
-                            "\nSistem criado por:" +
+                            "\nSistema criado por:" +
                             "\nAna Carolina Guimarães Sousa;" +
                             "\nBarbara Vitoria da Silva Santos;" +
                             "\nCleiton Ribeiro da Silva;" +
