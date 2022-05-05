@@ -29,15 +29,16 @@ public class Index {
                             "\nDaniel Augusto Magalhães França;" +
                             "\nJenifer Mirela Sousa Alves.");
                     break;
-                case 2:float temperatura, orçamento;
+                case 2:
+                    float temperatura, orçamento;
                     System.out.println("->Verificar se podemos ir a praia<-");
                     System.out.println("Diguite o numero da opção de como esta o tempo: \n\n" +
                             "Opcão (1): Ensolarado,  Opcão (2): Chovendo,  Opcão(3) Nublado, Opção (4) Garoa ");
-                    int tempo = input.nextInt();
+                    int tempo = sc.nextInt();
                     System.out.println("Temperatura: ");
-                    temperatura = input.nextFloat();
+                    temperatura = sc.nextFloat();
                     System.out.println("orçamento: ");
-                    orçamento = input.nextFloat();
+                    orçamento = sc.nextFloat();
 
                     switch (tempo) {
                         case 1:
@@ -60,8 +61,10 @@ public class Index {
                         System.out.println("Bora para a praia!");
                     } else {
                         System.out.println("Talvez na próxima!");
+                    }
                     break;
                 case 3:
+
                     break;
                 case 4:
                     break;
@@ -105,6 +108,8 @@ public class Index {
                     System.out.println("\n\nSistema encerrado com sucesso!");
                     break;
             }
-        } while (decisao != 7);
+        }
+        while (decisao != 7);
     }
 }
+
