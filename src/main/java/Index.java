@@ -86,7 +86,7 @@ public class Index {
                             "Entre com seu consumo em m3(metros cubicos) do mes:");
                     consumoAgua = sc.nextDouble();
                     if (consumoAgua <= 10) {
-                        total = consumoAgua * 2;
+                        total = tarifa1 * 2;
                     } else if (consumoAgua > 10 && consumoAgua <= 20) {
                         total = ((tarifa1 + (consumoAgua - 10) * tarifa2)) * 2;
                     } else if (consumoAgua > 20 && consumoAgua <= 50) {
