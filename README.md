@@ -5,7 +5,7 @@ Projeto desenvolvido para somar na nota semestral da disciplina Projeto Integrad
 ADO's são como atividades que contabilizam nota por colocarmos nossos aprendizados em prática.
 <br /><br />
 <br />
-O projeto utiliza o JDK 11 conforme orientado professor Tsuda. 
+O projeto utiliza o JDK 11 conforme orientado pelo professor Tsuda. 
 <br /><br /><br />
 Integrantes:
 <br />
