@@ -79,9 +79,9 @@ public class Index {
                 case 6:
                     double consumoAgua, total = 0,
                             tarifa1 = 29.00, tarifa2 = 4.54, tarifa3 = 11.33, tarifa4 = 12.48;
-                    System.out.println("Calculadora da conta de serviços de abastecimento de \n" +
+                    System.out.println("\nCalculadora da conta de serviços de abastecimento de \n" +
                             "água e/ou coleta de esgoto, residencial, para o município de SAO PAULO. \n" +
-                            "Levando em consideração que os valores das tarifas já foram estabelecidos e, " +
+                            "\nLevando em consideração que os valores das tarifas já foram estabelecidos e, " +
                             "será contado o uso do esgoto !\n\n" +
                             "Entre com seu consumo em m3(metros cubicos) do mes:");
                     consumoAgua = sc.nextDouble();
@@ -95,7 +95,7 @@ public class Index {
                     if (consumoAgua > 50) {
                         total = ((tarifa1 + 10 * tarifa2 + 30 * tarifa3 + (consumoAgua - 50) * tarifa4)) * 2;
                     }
-                    System.out.printf("____Sua conta de Água/Esgoto será no valor de %.2f:R$____\n", total);
+                    System.out.printf("____Sua conta de Água/Esgoto será no valor de R$:%.2f____\n", total);
                     break;
                 case 7:
                     System.out.println("------------CRÉDITOS------------" +
