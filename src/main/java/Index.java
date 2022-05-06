@@ -67,6 +67,28 @@ public class Index {
 
                     break;
                 case 4:
+                    String nome;
+                    float peso, altura, imc;
+
+                    System.out.println("Digite seu nome: ");
+                    nome = sc.next();
+                    System.out.println("Digite seu peso: ");
+                    peso = sc.nextFloat();
+                    System.out.println("Digite sua altura: ");
+                    altura = sc.nextFloat();
+                    imc = peso / (altura * altura);
+                    System.out.println(imc);
+
+                    if (imc < 18.5) {
+                        System.out.println(nome + " seu grau é de Magreza.");
+                    } else if (imc >= 18.5 && imc <= 24.9) {
+                        System.out.println(nome + " seu grau é Normal.");
+                    }
+                    if (imc >= 24.9 && imc <= 30) {
+                        System.out.println(nome + " seu grau é de Sobrepeso.");
+                    } else if (imc > 30) {
+                        System.out.println(nome + " seu grau é de Obesidade.");
+                    }
                     break;
                 case 5:
                     double precoEnergia = 0.28738;
