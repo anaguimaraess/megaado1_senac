@@ -30,7 +30,7 @@ public class Index {
                             "\nJenifer Mirela Sousa Alves.");
                     break;
                 case 2:
-                    float temperatura, orçamento;
+                    float temperatura, orcamento;
                     System.out.println("->Verificar se podemos ir a praia<-");
                     System.out.println("Diguite o numero da opção de como esta o tempo: \n\n" +
                             "Opcão (1): Ensolarado,  Opcão (2): Chovendo,  Opcão(3) Nublado, Opção (4) Garoa ");
@@ -38,7 +38,7 @@ public class Index {
                     System.out.println("Temperatura: ");
                     temperatura = sc.nextFloat();
                     System.out.println("orçamento: ");
-                    orçamento = sc.nextFloat();
+                    orcamento = sc.nextFloat();
 
                     switch (tempo) {
                         case 1:
@@ -57,7 +57,7 @@ public class Index {
                             System.out.println("Número inválido");
                             break;
                     }
-                    if (temperatura >= 25 && orçamento >= 2000 && tempo == 1) {
+                    if (temperatura >= 25 && orcamento >= 2000 && tempo == 1) {
                         System.out.println("Bora para a praia!");
                     } else {
                         System.out.println("Talvez na próxima!");
@@ -86,7 +86,7 @@ public class Index {
                             "Entre com seu consumo em m3(metros cubicos) do mes:");
                     consumoAgua = sc.nextDouble();
                     if (consumoAgua <= 10) {
-                        total = (consumoAgua * tarifa1) * 2;
+                        total = consumoAgua * 2;
                     } else if (consumoAgua > 10 && consumoAgua <= 20) {
                         total = ((tarifa1 + (consumoAgua - 10) * tarifa2)) * 2;
                     } else if (consumoAgua > 20 && consumoAgua <= 50) {
