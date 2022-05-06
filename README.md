@@ -4,7 +4,9 @@ Projeto desenvolvido para somar na nota semestral da disciplina Projeto Integrad
 <br />
 ADO's são como atividades que contabilizam nota por colocarmos nossos aprendizados em prática.
 <br /><br />
-
+<br />
+O projeto utiliza o JDK 11 conforme orientado pelo professor Tsuda. 
+<br /><br /><br />
 Integrantes:
 <br />
 Ana Carolina Guimarães Sousa, Bárbara Vitória da Silva Santos, Cleiton Ribeiro da Silva, Daniel Augusto Magalhães França e Jenifer Mirela Sousa Alves.
@@ -15,6 +17,9 @@ EXERCÍCIO:
 Implementar as 6 funcionalidades abaixo em um único projeto Java / Maven.
 Tela de créditos: Mostrar na saída o nome completo de todos os integrantes do grupo
 <br /><br />
+Será incluido os 5 exercicios abaixo, 1 tela de créditos e o "encerrar" que será a 7 funcionalidade.
+<br />
+
 1.Desenvolver um algoritmo para decidir se podermos ir para a praia no final de semana - Considerar como critérios a previsão do tempo (mínimo de 25 graus e sem chuva) e orçamento mínimo de R$ 2000,00.<br />
 Para previsão do tempo, considerar, além da temperatura, as seguintes possibilidades de condição do tempo: A) Sol, B) Nublado, C) Garoa, D) Chuva  <br />
 Exemplos (em vermelho, as condições que impedem a ida à praia) <br />
