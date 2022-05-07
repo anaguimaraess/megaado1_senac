@@ -32,12 +32,12 @@ public class Index {
                 case 2:
                     float temperatura, orcamento;
                     System.out.println("->Verificar se podemos ir a praia<-");
-                    System.out.println("Diguite o numero da opção de como esta o tempo: \n\n" +
+                    System.out.println("Digite o numero da opção de como esta o tempo: \n\n" +
                             "Opcão (1): Ensolarado,  Opcão (2): Chovendo,  Opcão(3) Nublado, Opção (4) Garoa ");
                     int tempo = sc.nextInt();
                     System.out.println("Temperatura: ");
                     temperatura = sc.nextFloat();
-                    System.out.println("orçamento: ");
+                    System.out.println("Orçamento: ");
                     orcamento = sc.nextFloat();
 
                     switch (tempo) {
@@ -77,7 +77,7 @@ public class Index {
                     System.out.println("Digite sua altura: ");
                     altura = sc.nextFloat();
                     imc = peso / (altura * altura);
-                    System.out.println(imc);
+                    System.out.printf("Imc = %.2f \n", (imc));
 
                     if (imc < 18.5) {
                         System.out.println(nome + " seu grau é de Magreza.");
