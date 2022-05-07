@@ -77,7 +77,7 @@ public class Index {
                     System.out.println("Digite sua altura: ");
                     altura = sc.nextFloat();
                     imc = peso / (altura * altura);
-                    System.out.printf("Imc = %.2f \n", (imc));
+                    System.out.printf("Imc = %.1f \n", (imc));
 
                     if (imc < 18.5) {
                         System.out.println(nome + " seu grau é de Magreza.");
