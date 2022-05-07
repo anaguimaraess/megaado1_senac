@@ -64,6 +64,26 @@ public class Index {
                     }
                     break;
                 case 3:
+                    int produto;
+                    double precoUni, valorFinal, desconto;
+                    System.out.println("Digite a quantidade de produtos: ");
+                    produto = sc.nextInt();
+                    System.out.println("Digite o preço unitario: ");
+                    precoUni = sc.nextInt();
+                    if(produto >= 10){
+                        //desconto de 10%
+
+                        desconto = (produto * precoUni) * 0.10;
+                        valorFinal = (produto * precoUni) - desconto;
+
+                        System.out.println("Valor final: " + valorFinal);
+
+
+                    }else{
+
+                        valorFinal = produto * precoUni;
+                        System.out.println("Valor final: " + valorFinal);
+                    }
 
                     break;
                 case 4:
