@@ -70,7 +70,7 @@ public class Index {
                     produto = sc.nextInt();
                     System.out.println("Digite o preço unitario: ");
                     precoUni = sc.nextInt();
-                    if(produto >= 10){
+                    if (produto >= 10) {
                         //desconto de 10%
 
                         desconto = (produto * precoUni) * 0.10;
@@ -79,7 +79,7 @@ public class Index {
                         System.out.println("Valor final: " + valorFinal);
 
 
-                    }else{
+                    } else {
 
                         valorFinal = produto * precoUni;
                         System.out.println("Valor final: " + valorFinal);
