@@ -32,7 +32,7 @@ public class Index {
                 case 2:
                     float temperatura, orcamento;
                     System.out.println("->Verificar se podemos ir a praia<-");
-                    System.out.println("Digite o numero da opção de como esta o tempo: \n\n" +
+                    System.out.println("Digite o número da opção de como esta o tempo: \n\n" +
                             "Opcão (1): Ensolarado,  Opcão (2): Chovendo,  Opcão(3) Nublado, Opção (4) Garoa ");
                     int tempo = sc.nextInt();
                     System.out.println("Temperatura: ");
@@ -70,7 +70,7 @@ public class Index {
                     String nome;
                     float peso, altura, imc;
 
-                    System.out.println("Digite seu nome: ");
+                    System.out.println("Digite seu nome");
                     nome = sc.next();
                     System.out.println("Digite seu peso: ");
                     peso = sc.nextFloat();
