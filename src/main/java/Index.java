@@ -32,20 +32,20 @@ public class Index {
                 case 2:
                     float temperatura, orcamento;
                     System.out.println("->Verificar se podemos ir a praia<-");
-                    System.out.println("Digite o número da opção de como esta o tempo: \n\n" +
-                            "Opcão (1): Ensolarado,  Opcão (2): Chovendo,  Opcão(3) Nublado, Opção (4) Garoa ");
-                    int tempo = sc.nextInt();
+                    System.out.println("Digite o numero da opção de como esta o clima: \n\n" +
+                            "Opção (1): Ensolarado,  Opção (2): Chovendo,  Opção(3) Nublado, Opção (4) Garoa ");
+                    int clima = sc.nextInt();
                     System.out.println("Temperatura: ");
                     temperatura = sc.nextFloat();
                     System.out.println("Orçamento: ");
                     orcamento = sc.nextFloat();
 
-                    switch (tempo) {
+                    switch (clima) {
                         case 1:
                             System.out.println("Sol");
                             break;
                         case 2:
-                            System.out.println("Chuva");
+                            System.out.println("Chovendo");
                             break;
                         case 3:
                             System.out.println("Nublado");
@@ -57,9 +57,13 @@ public class Index {
                             System.out.println("Número inválido");
                             break;
                     }
-                    if (temperatura >= 25 && orcamento >= 2000 && tempo == 1) {
-                        System.out.println("Bora para a praia!");
-                    } else {
+                    if (temperatura >= 25 && orcamento >= 2000 && clima == 1) {
+                        System.out.println("Sim, vamos a praia!");
+                    } else if (temperatura >= 25 && orcamento >= 2000 && clima == 3){
+                        System.out.println("Sim, vamos a praia!");
+                    }else if(temperatura <= 25 && orcamento <= 2000 && clima != 1){
+                        System.out.println("Talvez na próxima");
+                    }else if (temperatura <= 25 && orcamento <= 2000 && clima != 3){
                         System.out.println("Talvez na próxima!");
                     }
                     break;
