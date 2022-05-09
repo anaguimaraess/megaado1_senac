@@ -4,9 +4,8 @@ public class Index {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int decisao;
+
         System.out.println("Bem-vindx ao facilitor de seus calculos e decisões!\n ");
-
-
         do {
             System.out.println("\nMENU");
             System.out.println("1 - Créditos " +
@@ -59,9 +58,9 @@ public class Index {
                     }
                     if (temperatura >= 25 && orcamento >= 2000 && clima == 1) {
                         System.out.println("Sim, pode ir a praia!");
-                    } else if (temperatura >= 25 && orcamento >= 2000 && clima == 3){
+                    } else if (temperatura >= 25 && orcamento >= 2000 && clima == 3) {
                         System.out.println("Sim, pode ir a praia!");
-                    }else System.out.println("Não ir a praia");
+                    } else System.out.println("Não ir a praia");
 
                     break;
                 case 3:
@@ -73,15 +72,10 @@ public class Index {
                     precoUni = sc.nextInt();
                     if (produto >= 10) {
                         //desconto de 10%
-
                         desconto = (produto * precoUni) * 0.10;
                         valorFinal = (produto * precoUni) - desconto;
-
                         System.out.println("Valor final: " + valorFinal);
-
-
                     } else {
-
                         valorFinal = produto * precoUni;
                         System.out.println("Valor final: " + valorFinal);
                     }
@@ -138,7 +132,7 @@ public class Index {
                     if (consumoAgua > 50) {
                         total = ((tarifa1 + 10 * tarifa2 + 30 * tarifa3 + (consumoAgua - 50) * tarifa4)) * 2;
                     }
-                    System.out.printf("____Sua conta de Água/Esgoto será no valor de R$:%.2f____\n", total);
+                    System.out.printf("Sua conta de Água/Esgoto será no valor de R$:%.2f\n", total);
                     break;
                 case 7:
                     System.out.println("------------CRÉDITOS------------" +
