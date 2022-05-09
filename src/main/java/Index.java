@@ -58,14 +58,11 @@ public class Index {
                             break;
                     }
                     if (temperatura >= 25 && orcamento >= 2000 && clima == 1) {
-                        System.out.println("Sim, vamos a praia!");
+                        System.out.println("Sim, pode ir a praia!");
                     } else if (temperatura >= 25 && orcamento >= 2000 && clima == 3){
-                        System.out.println("Sim, vamos a praia!");
-                    }else if(temperatura <= 25 && orcamento <= 2000 && clima != 1){
-                        System.out.println("Talvez na próxima");
-                    }else if (temperatura <= 25 && orcamento <= 2000 && clima != 3){
-                        System.out.println("Talvez na próxima!");
-                    }
+                        System.out.println("Sim, pode ir a praia!");
+                    }else System.out.println("Não ir a praia");
+
                     break;
                 case 3:
                     int produto;
